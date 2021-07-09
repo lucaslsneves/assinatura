@@ -1,0 +1,70 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    background-image: url('../imgs/fundo.png');
+}
+
+#left {
+    top: 100px;
+    background-color: #007201;
+    border-radius: 15px 0 0 15px;
+}
+
+#left>img {
+    padding: 15px;
+}
+
+#right {
+    top: 100px;
+    background-color: #fff;
+    border-radius: 0 15px 15px 0;
+}
+
+table strong {
+    LINE-HEIGHT: 19px;
+}
+
+#about {
+    margin: -5px;
+    font-family: tahoma, arial, verdana;
+    font-size: 12px;
+    background-repeat: no-repeat;
+    width: 559px;
+    height: auto;
+    background-size: 103%;
+}
+
+#about strong {
+    color: #007129;
+    font-weight: 1100;
+    padding-left: 18px;
+}
+#about span{
+    color: #007129;
+    font-weight: bolder;
+}
+#telCard1{
+    padding-left: 18px;
+
+}
+
+#about #nomeCard {
+    font-size: 22px;
+    color: #007129;
+}
+
+#about #cargoCard {
+    font-size: 15px;
+    color: #007129;
+}
+
+#dados {
+    margin-bottom: 18px;
+}
+#divisor{
+    color: #007129;
+    visibility: hidden;
+}
