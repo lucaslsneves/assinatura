@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
     margin: 0 auto;
     padding: 0 auto;
+    font-family: 'Roboto' , sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,7 +13,7 @@ body {
 
 #left {
     top: 100px;
-    background-color: #007201;
+    background-color: #005924;
     border-radius: 15px 0 0 15px;
 }
 
@@ -38,33 +42,70 @@ table strong {
 }
 
 #about strong {
-    color: #007129;
-    font-weight: 1100;
-    padding-left: 18px;
+    color: #747474;
+    font-weight: 400;
+   
 }
 #about span{
-    color: #007129;
-    font-weight: bolder;
+    color: #747474;
+    text-align: left;
+    display: inline-flex;
+    width: 100%;
+    padding-left: 22px;
 }
 #telCard1{
-    padding-left: 18px;
+  
 
 }
 
 #about #nomeCard {
-    font-size: 22px;
-    color: #007129;
+    font-size: 20px;
+    color: #005924;
+    display: block;
+    height: 20px;
+    font-weight: bold;
 }
 
 #about #cargoCard {
     font-size: 15px;
-    color: #007129;
+    color: #747474;;
+    margin-top: 5px;
+    display: block;
+    height: 20px;
+}
+
+#about #cargoCard {
+    font-weight: bold;
+    text-align: center;
+    color: #222;
 }
 
 #dados {
     margin-bottom: 18px;
+    position: relative;
+}
+
+#wrapper-nome-cargo {
+    width: 700px;
+    top: -50px;
+    right: 50%;
+    position: absolute;
+    transform: translateX(50%);
 }
 #divisor{
-    color: #007129;
+    color: #747474;;
     visibility: hidden;
+}
+
+.flexx {
+    position:relative;
+    display: flex;
+    margin-top: 37px;
+    padding-left: 35px;
+    font-weight: normal;
+    height: 45px;
+    font-size: 8.5px;
+    text-transform: uppercase;
+   align-items: center;
+    color: #747474;
 }

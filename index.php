@@ -30,13 +30,13 @@
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
-                            <input id="nome" type="text" ng-model="nome" class="form-control" maxlength="30" placeholder="*Insira seu Nome" aria-label="Nome" aria-describedby="basic-addon1" name="nameId" required>
+                            <input id="nome" type="text" ng-model="nome" class="form-control" maxlength="40" placeholder="*Insira seu Nome" aria-label="Nome" aria-describedby="basic-addon1" name="nameId" required>
                         </div>
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
-                            <input id="cargo" type="text" ng-model="cargo" class="form-control" maxlength="38" required placeholder="*Insira seu Cargo" aria-label="calgo" aria-describedby="basic-addon1">
+                            <input id="cargo" type="text" ng-model="cargo" class="form-control" maxlength="55" required placeholder="*Insira seu Cargo" aria-label="calgo" aria-describedby="basic-addon1">
                         </div>
 
                         <div class="input-group mb-3">
@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="input-group mb-3">
-                            <input type="text" id="email" ng-model="email" class="form-control" maxlength="34" placeholder="Insira aqui seu e-mail" required aria-label="e-mail" aria-describedby="basic-addon2">
+                            <input type="text" id="email" ng-model="email" class="form-control" maxlength="21" placeholder="Insira aqui seu e-mail" required aria-label="e-mail" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon2">@ints.org.br</span>
                             </div>
@@ -60,7 +60,7 @@
                             </div>
                             <select onchange="backgroundImg()" ng-model="filial" class="custom-select" required id="inputGroupSelect01">
                                 <option value="" disabled selected>Selecione sua unidade</option>
-                                <option value="Sede Salvador/BA">Sede Salvador/BA</option>
+                                <option value="Sede - Salvador/BA">Sede Salvador/BA</option>
                                 <option value="Upa Feira de Santana">Upa Feira de Santana</option>
                                 <option value=" UPA 24h Brotas"> UPA 24h Brotas</option>
                                 <option value="Bertioga">Bertioga</option>
@@ -68,14 +68,14 @@
                                 <option value="UPA OROPÓ - MOGI DAS CRUZES">Upa Oropó - Mogi das Cruzes</option>
                                 <option value="Suzano">Suzano</option>
                                 <option value="Hospital Espanhol">Hospital Espanhol</option>
-                                <option value="Hospital Regional de Itumbiara">Hospital Regional de Itumbiara</option>
+                                <option value="Hospital Reg. de Itumbiara">Hospital Regional de Itumbiara</option>
                                 <option value="Hospital HUGO">Hospital HUGO</option>
                                 <option value="Região SACA">Região SACA</option>
-                                <option value="Hospital Municipal de Guarapiranga">Hospital Municipal de Guarapiranga</option>
-                                <option value="Hospital Municipal de Guarapiranga">Hospital Manoel Victorino</option>
+                                <option value="Hosp. Mun. de Guarapiranga">Hospital Municipal de Guarapiranga</option>
+                                <option value="Hosp. Manoel Victorino">Hospital Manoel Victorino</option>
                             </select>
                         </div>
-                        <button onclick="isEmpty()" id="buttonId" type="button" class="btn btn-warning btn-block"><strong style="color:white;">GERAR</strong></button><br>
+                        <button onclick="isEmpty()" id="buttonId" type="button" class="btn btn-warning btn-block"><strong style="color:#fff;letter-spacing: 1.4px;">GERAR</strong></button><br>
                     </form>
                     <p style="color:white;">Dúvidas, sugestões, ou notificar erros encontrados:<br> rodrigosantos@ints.org.br ou eduardosantos@ints.org.br</p>
                 </div>
@@ -96,18 +96,23 @@
                     <table width="540px" height="190px">
                         <tbody>
                             <tr>
-                                <td id="about" class="img-fluid" style="background-image:url('imgs/assinatura-email.png');">
+                                <td id="about" class="img-fluid" style="background-image:url('imgs/sede.png');">
                                     <div id="dados">
-                                        <strong id="nomeCard" class="ng-binding">{{nome}}</strong><br>
-                                        <strong id="cargoCard" class="ng-binding">{{cargo}}</strong>
-                                        <br><br>
-                                        <span id="telCard1" class="ng-binding">{{telefone}}</span>
-                                        <span id="divisor"> | </span>
-                                        <span class="ng-binding">{{telefone2}}</span>
-                                        <br>
-                                        <strong class="ng-binding">{{email}}@ints.org.br</strong><br>
-                                        <strong class="ng-binding"><i class="fa fa-map-marker" aria-hidden="true"></i> {{filial}}</strong>
-                                        <br>
+                                        <div id="wrapper-nome-cargo">
+                                            <strong id="nomeCard" style="text-align:center;" class="ng-binding">{{nome}}</strong>
+                                            <strong id="cargoCard" class="ng-binding">{{cargo}}</strong>
+                                        </div>
+                                        <div class="flexx">
+                                            <div style="flex:1.1; padding-left:10px; display:flex; flex-direction:column;">
+                                                <span id="telCard1"  class="ng-binding">{{telefone}}</span>
+                                                <span class="ng-binding">{{telefone2}}</span>
+                                            </div>
+
+                                            <strong style="flex:1.8; padding-left: 50px;" class="ng-binding">{{email}}@ints.org.br</strong><br>
+                                            <strong style="flex:1.1;padding-left:20px;" class="ng-binding"><i class="fa fa-map-marker" aria-hidden="true"></i> {{filial}}</strong>
+                                        </div>
+
+
                                     </div>
                                 </td>
                             </tr>
@@ -146,11 +151,13 @@
         console.log(backgroundStatus);
 
         if (backgroundStatus == "Região SACA") {
-            document.getElementById("about").style = "background-image:url('imgs/assinatura-regiao_saca.png')"
+            document.getElementById("about").style = "background-image:url('imgs/saca.png')"
+        } else if (backgroundStatus == "Hospital HUGO") {
+            document.getElementById("about").style = "background-image:url('imgs/hugo.png')"
         } else if (backgroundStatus == "Hospital Municipal de Guarapiranga") {
-            document.getElementById("about").style = "background-image:url('imgs/assinatura-guarapiranga.png')"
+            document.getElementById("about").style = "background-image:url('imgs/guarapiranga.png')"
         } else {
-            document.getElementById("about").style = "background-image:url('imgs/assinatura-email.png')"
+            document.getElementById("about").style = "background-image:url('imgs/sede.png')"
         }
 
     }
@@ -200,7 +207,7 @@
         window.open('uploads/assinatura-email-' + nome + '.jpeg');
     }
 
-    async function doCapture()  {
+    async function doCapture() {
         window.scrollTo(0, 0);
         ajaxGetNome();
         minhafuncao();
