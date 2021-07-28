@@ -109,7 +109,7 @@
                                             </div>
 
                                             <strong style="flex:1.8; padding-left: 50px;" class="ng-binding">{{email}}@ints.org.br</strong><br>
-                                            <strong style="flex:1.1;padding-left:20px;" class="ng-binding"><i class="fa fa-map-marker" aria-hidden="true"></i> {{filial}}</strong>
+                                            <strong style="flex:1.1;padding-left:20px;" class="ng-binding">{{filial}}</strong>
                                         </div>
 
 
@@ -154,7 +154,7 @@
             document.getElementById("about").style = "background-image:url('imgs/saca.png')"
         } else if (backgroundStatus == "Hospital HUGO") {
             document.getElementById("about").style = "background-image:url('imgs/hugo.png')"
-        } else if (backgroundStatus == "Hospital Municipal de Guarapiranga") {
+        } else if (backgroundStatus == "Hosp. Mun. de Guarapiranga") {
             document.getElementById("about").style = "background-image:url('imgs/guarapiranga.png')"
         } else {
             document.getElementById("about").style = "background-image:url('imgs/sede.png')"
