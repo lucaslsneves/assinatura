@@ -30,24 +30,24 @@
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
-                            <input id="nome" type="text" ng-model="nome" class="form-control" maxlength="40" placeholder="*Insira seu Nome" aria-label="Nome" aria-describedby="basic-addon1" name="nameId" required>
+                            <input id="nome" type="text" ng-model="nome" class="form-control" maxlength="30" placeholder="* Primeiro e último nome" aria-label="Nome" aria-describedby="basic-addon1" name="nameId" required>
                         </div>
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
-                            <input id="cargo" type="text" ng-model="cargo" class="form-control" maxlength="55" required placeholder="*Insira seu Cargo" aria-label="calgo" aria-describedby="basic-addon1">
+                            <input id="cargo" type="text" ng-model="cargo" class="form-control" maxlength="55" required placeholder="* Cargo" aria-label="calgo" aria-describedby="basic-addon1">
                         </div>
 
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
-                            <input type="text" ng-model="telefone" id="telefone" class="form-control mr-2" required placeholder="*Numero de Tel da Unidade/Corporativo" aria-label="tel" aria-describedby="basic-addon1">
-                            <input type="text" onkeypress=telDivisor() ng-model="telefone2" id="telefone2" class="form-control" placeholder="Numero de Tel da Unidade/Corporativo" aria-label="tel" aria-describedby="basic-addon1">
+                            <input type="text" ng-model="telefone" id="telefone" class="form-control mr-2" required placeholder="* Telefone/Celular" aria-label="tel" aria-describedby="basic-addon1">
+                            <input type="text" onkeypress=telDivisor() ng-model="telefone2" id="telefone2" class="form-control" placeholder="Telefone/Celular" aria-label="tel" aria-describedby="basic-addon1">
                         </div>
 
                         <div class="input-group mb-3">
-                            <input type="text" id="email" ng-model="email" class="form-control" maxlength="21" placeholder="Insira aqui seu e-mail" required aria-label="e-mail" aria-describedby="basic-addon2">
+                            <input type="text" id="email" ng-model="email" class="form-control" maxlength="21" placeholder="* Email" required aria-label="e-mail" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon2">@ints.org.br</span>
                             </div>
@@ -71,8 +71,8 @@
                                 <option value="Hospital Reg. de Itumbiara">Hospital Regional de Itumbiara</option>
                                 <option value="Hospital HUGO">Hospital HUGO</option>
                                 <option value="Região SACA">Região SACA</option>
-                                <option value="Hosp. Mun. de Guarapiranga">Hospital Municipal de Guarapiranga</option>
-                                <option value="Hosp. Manoel Victorino">Hospital Manoel Victorino</option>
+                                <option value="Hospital Municipal de Guarapiranga">Hospital Municipal de Guarapiranga</option>
+                                <option value="Hospital Manoel Victorino">Hospital Manoel Victorino</option>
                             </select>
                         </div>
                         <button onclick="isEmpty()" id="buttonId" type="button" class="btn btn-warning btn-block"><strong style="color:#fff;letter-spacing: 1.4px;">GERAR</strong></button><br>
@@ -96,20 +96,22 @@
                     <table width="540px" height="190px">
                         <tbody>
                             <tr>
-                                <td id="about" class="img-fluid" style="background-image:url('imgs/sede.png');">
+                                <td id="about" class="img-fluid" style="background-image:url('imgs/sede2.png');">
                                     <div id="dados">
-                                        <div id="wrapper-nome-cargo">
-                                            <strong id="nomeCard" style="text-align:center;" class="ng-binding">{{nome}}</strong>
-                                            <strong id="cargoCard" class="ng-binding">{{cargo}}</strong>
-                                        </div>
-                                        <div class="flexx">
-                                            <div style="flex:1.1; padding-left:10px; display:flex; flex-direction:column;">
-                                                <span id="telCard1"  class="ng-binding">{{telefone}}</span>
-                                                <span class="ng-binding">{{telefone2}}</span>
+                                        <div id="signature-container">
+                                            <div id="wrapper-nome-cargo">
+                                                <strong id="nomeCard" class="ng-binding">{{nome}}</strong>
+                                                <strong id="cargoCard" class="ng-binding">{{cargo}}</strong>
                                             </div>
+                                            <div id="wrapper-tel-email-local">
+                                                <div style="display:flex; position:absolute;top:2%; width:100%;">
+                                                    <span style="margin-right: 10px;" id="telCard1" class="ng-binding">{{telefone}}</span>
+                                                    <span class="ng-binding">{{telefone2}}</span>
+                                                </div>
 
-                                            <strong style="flex:1.8; padding-left: 50px;" class="ng-binding">{{email}}@ints.org.br</strong><br>
-                                            <strong style="flex:1.1;padding-left:20px;" class="ng-binding">{{filial}}</strong>
+                                                <strong style="position:absolute;top:30%;" class="ng-binding">{{email}}@ints.org.br</strong><br>
+                                                <strong style="margin-bottom: 10px;position:absolute;top:57%;" class="ng-binding">{{filial}}</strong>
+                                            </div>
                                         </div>
 
 
@@ -151,13 +153,13 @@
         console.log(backgroundStatus);
 
         if (backgroundStatus == "Região SACA") {
-            document.getElementById("about").style = "background-image:url('imgs/saca.png')"
+            document.getElementById("about").style = "background-image:url('imgs/saca3.png')"
         } else if (backgroundStatus == "Hospital HUGO") {
-            document.getElementById("about").style = "background-image:url('imgs/hugo.png')"
-        } else if (backgroundStatus == "Hosp. Mun. de Guarapiranga") {
-            document.getElementById("about").style = "background-image:url('imgs/guarapiranga.png')"
+            document.getElementById("about").style = "background-image:url('imgs/hugo3.png')"
+        } else if (backgroundStatus == "Hospital Municipal de Guarapiranga") {
+            document.getElementById("about").style = "background-image:url('imgs/guarapiranga3.png')"
         } else {
-            document.getElementById("about").style = "background-image:url('imgs/sede.png')"
+            document.getElementById("about").style = "background-image:url('imgs/sede3.png')"
         }
 
     }
