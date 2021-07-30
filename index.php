@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="input-group mb-3">
-                            <input type="text" id="email" ng-model="email" class="form-control" maxlength="22" placeholder="* Email" required aria-label="e-mail" aria-describedby="basic-addon2">
+                            <input type="text" id="email" ng-model="email" class="form-control" maxlength="21" placeholder="* Email" required aria-label="e-mail" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon2">@ints.org.br</span>
                             </div>
