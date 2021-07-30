@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@font-face {
+    font-family: 'd-din';
+    src: url('../imgs/D-DIN.otf');
+}
+@font-face {
+    font-family: 'd-din';
+    src: url('../imgs/D-DIN.otf');
+}
+@font-face {
+    font-family: 'd-din-bold';
+    src: url('../imgs/D-DIN-Bold.otf');
+    font-weight: bold;
+}
 * {
     margin: 0 auto;
     padding: 0 auto;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'd-din' , sans-serif;
     box-sizing: border-box;
   
 }
@@ -35,7 +47,7 @@ table strong {
 #about {
     margin: -5px;
     font-family: tahoma, arial, verdana;
-    font-size: 13px;
+    font-size: 14px;
     background-repeat: no-repeat;
     width: 559px;
     height: auto;
@@ -60,7 +72,7 @@ table strong {
 
 #about #nomeCard {
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
     color: #005924;
     display: block;
     font-weight: bold;
@@ -68,7 +80,7 @@ table strong {
 
 #about #cargoCard {
     margin: 0;
-    font-size: 15px;
+    font-size: 16px;
     color: #747474;;
     margin-top: 5px;
 }
@@ -99,6 +111,7 @@ table strong {
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
+    font-family: 'd-din-bold';
     font-weight: bold;
 }
 #divisor{
