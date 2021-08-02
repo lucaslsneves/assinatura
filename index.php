@@ -96,7 +96,7 @@
                     <table width="540px" height="190px">
                         <tbody>
                             <tr>
-                                <td id="about" class="img-fluid" style="background-image:url('imgs/sede2.png');">
+                                <td id="about" class="img-fluid" style="background-image:url('imgs/sede4.png');">
                                     <div id="dados">
                                         <div id="signature-container">
                                             <div id="wrapper-nome-cargo">
@@ -114,7 +114,11 @@
                                             </div>
                                         </div>
 
-
+                                            <div class="footer2">
+                                                <p>Canal de Ética e Transparência <strong id="bolder">0800 799 9056</strong></p>
+                                                <p id="social-media">/INTSBrasil</p>
+                                                <p id="site">www.ints.org.br</p>
+                                            </div>
                                     </div>
                                 </td>
                             </tr>
@@ -153,13 +157,13 @@
         console.log(backgroundStatus);
 
         if (backgroundStatus == "Região SACA") {
-            document.getElementById("about").style = "background-image:url('imgs/saca3.png')"
+            document.getElementById("about").style = "background-image:url('imgs/saca4.png')"
         } else if (backgroundStatus == "Hospital HUGO") {
-            document.getElementById("about").style = "background-image:url('imgs/hugo3.png')"
+            document.getElementById("about").style = "background-image:url('imgs/hugo4.png')"
         } else if (backgroundStatus == "Hospital Municipal de Guarapiranga") {
-            document.getElementById("about").style = "background-image:url('imgs/guarapiranga3.png')"
+            document.getElementById("about").style = "background-image:url('imgs/guarapiranga4.png')"
         } else {
-            document.getElementById("about").style = "background-image:url('imgs/sede3.png')"
+            document.getElementById("about").style = "background-image:url('imgs/sede4.png')"
         }
 
     }

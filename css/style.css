@@ -132,3 +132,35 @@ table strong {
 #wrapper-tel-email-local * {
     margin: 0;
 }
+
+.footer2 {
+    position: absolute;
+    width: 100%;
+    left:30px;
+    bottom: -33px;
+}
+
+.footer2 p {
+    display: inline-block;
+    margin: 0;
+  
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.footer2 #social-media {
+    text-transform: none;
+    margin-left: 62px;
+    color: #747474;
+}
+
+.footer2 #site {
+    margin-left: 20px;
+}
+
+
+
+.footer2 p #bolder{
+    margin-left: 5px;
+    font-weight: bold;
+}
