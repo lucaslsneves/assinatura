@@ -62,13 +62,13 @@
                                 <option value="" disabled selected>Selecione sua unidade</option>
                                 <option value="Sede - Salvador/BA">Sede Salvador/BA</option>
                                 <option value="Upa Feira de Santana">Upa Feira de Santana</option>
-                                <option value=" UPA 24h Brotas"> UPA 24h Brotas</option>
+                                <option value="UPA 24h Brotas"> UPA 24h Brotas</option>
                                 <option value="Bertioga">Bertioga</option>
                                 <option value="CRESAMU Mogi das Cruzes">CRESAMU - Mogi das Cruzes</option>
                                 <option value="UPA OROPÓ - MOGI DAS CRUZES">Upa Oropó - Mogi das Cruzes</option>
                                 <option value="Suzano">Suzano</option>
                                 <option value="Hospital Espanhol">Hospital Espanhol</option>
-                                <option value="Hospital Reg. de Itumbiara">Hospital Regional de Itumbiara</option>
+                                <option value="Hospital Regional de Itumbiara">Hospital Regional de Itumbiara</option>
                                 <option value="Hospital HUGO">Hospital HUGO</option>
                                 <option value="Região SACA">Região SACA</option>
                                 <option value="Hospital Municipal de Guarapiranga">Hospital Municipal de Guarapiranga</option>
@@ -104,21 +104,21 @@
                                                 <strong id="cargoCard" class="ng-binding">{{cargo}}</strong>
                                             </div>
                                             <div id="wrapper-tel-email-local">
-                                                <div style="display:flex; position:absolute;top:2%; width:100%;">
+                                                <div style="display:flex; position:absolute;top:1%; width:100%;">
                                                     <span style="margin-right: 10px;" id="telCard1" class="ng-binding">{{telefone}}</span>
                                                     <span class="ng-binding">{{telefone2}}</span>
                                                 </div>
 
-                                                <strong style="position:absolute;top:30%;" class="ng-binding">{{email}}@ints.org.br</strong><br>
+                                                <strong style="position:absolute;top:28.5%;" class="ng-binding">{{email}}@ints.org.br</strong><br>
                                                 <strong style="margin-bottom: 10px;position:absolute;top:57%;" class="ng-binding">{{filial}}</strong>
                                             </div>
                                         </div>
 
-                                            <div class="footer2">
-                                                <p>Canal de Ética e Transparência <strong id="bolder">0800 799 9056</strong></p>
-                                                <p id="social-media">/INTSBrasil</p>
-                                                <p id="site">www.ints.org.br</p>
-                                            </div>
+                                        <div class="footer2">
+                                            <p>Canal de Ética e Transparência <strong id="bolder">0800 799 9056</strong></p>
+                                            <p id="social-media">/INTSBrasil</p>
+                                            <p id="site">www.ints.org.br</p>
+                                        </div>
                                     </div>
                                 </td>
                             </tr>
@@ -162,6 +162,16 @@
             document.getElementById("about").style = "background-image:url('imgs/hugo4.png')"
         } else if (backgroundStatus == "Hospital Municipal de Guarapiranga") {
             document.getElementById("about").style = "background-image:url('imgs/guarapiranga4.png')"
+        } else if (backgroundStatus == "Upa Feira de Santana") {
+            document.getElementById("about").style = "background-image:url('imgs/feira4.png')"
+        } else if (backgroundStatus == "UPA 24h Brotas") {
+            document.getElementById("about").style = "background-image:url('imgs/brotas4.png')"
+        } else if (backgroundStatus == "Hospital Espanhol") {
+            document.getElementById("about").style = "background-image:url('imgs/espanhol4.png')"
+        } else if (backgroundStatus == "Hospital Regional de Itumbiara") {
+            document.getElementById("about").style = "background-image:url('imgs/itumbiara4.png')"
+        } else if (backgroundStatus == "Hospital Manoel Victorino") {
+            document.getElementById("about").style = "background-image:url('imgs/mv4.png')"
         } else {
             document.getElementById("about").style = "background-image:url('imgs/sede4.png')"
         }
