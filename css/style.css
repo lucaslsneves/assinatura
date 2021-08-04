@@ -51,7 +51,7 @@ table strong {
     background-repeat: no-repeat;
     width: 559px;
     height: auto;
-    background-size: 103%;
+    background-size: 100%;
 }
 
 #about strong {
@@ -113,6 +113,7 @@ table strong {
     overflow: hidden;
     font-family: 'd-din-bold';
     font-weight: bold;
+    margin-right: 10px;
 }
 #divisor{
     color: #747474;;
@@ -127,6 +128,7 @@ table strong {
     flex-direction: column;
     position: relative;
     color: #000;
+    margin-left: 0px;
 }
 
 #wrapper-tel-email-local * {
@@ -137,7 +139,7 @@ table strong {
     position: absolute;
     width: 100%;
     left:30px;
-    bottom: -33px;
+    bottom: -30px;
 }
 
 .footer2 p {
@@ -150,7 +152,7 @@ table strong {
 
 .footer2 #social-media {
     text-transform: none;
-    margin-left: 62px;
+    margin-left: 53px;
     color: #747474;
 }
 

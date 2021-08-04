@@ -47,7 +47,7 @@
                         </div>
 
                         <div class="input-group mb-3">
-                            <input type="text" id="email" ng-model="email" class="form-control" maxlength="21" placeholder="* Email" required aria-label="e-mail" aria-describedby="basic-addon2">
+                            <input type="text" id="email" ng-model="email" class="form-control" maxlength="25" placeholder="* Email" required aria-label="e-mail" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon2">@ints.org.br</span>
                             </div>
@@ -65,7 +65,7 @@
                                 <option value="UPA 24h Brotas"> UPA 24h Brotas</option>
                                 <option value="Bertioga">Bertioga</option>
                                 <option value="CRESAMU Mogi das Cruzes">CRESAMU - Mogi das Cruzes</option>
-                                <option value="UPA OROPÓ - MOGI DAS CRUZES">Upa Oropó - Mogi das Cruzes</option>
+                                <option value="UPA Oropó - Mogi das Cruzes">Upa Oropó - Mogi das Cruzes</option>
                                 <option value="Suzano">Suzano</option>
                                 <option value="Hospital Espanhol">Hospital Espanhol</option>
                                 <option value="Hospital Regional de Itumbiara">Hospital Regional de Itumbiara</option>
@@ -77,7 +77,7 @@
                         </div>
                         <button onclick="isEmpty()" id="buttonId" type="button" class="btn btn-warning btn-block"><strong style="color:#fff;letter-spacing: 1.4px;">GERAR</strong></button><br>
                     </form>
-                    <p style="color:white;">Dúvidas, sugestões, ou notificar erros encontrados:<br> rodrigosantos@ints.org.br ou eduardosantos@ints.org.br</p>
+                    <p style="color:white;">Dúvidas, sugestões, ou notificar erros encontrados:<br> rodrigosantos@ints.org.br ou lucasneves@ints.org.br</p>
                 </div>
 
                 <div id="right" class="col-lg-6"><br>
@@ -93,7 +93,7 @@
                     <p align="justify">3 - Após a imagem gerada, clique com botão direito, salvar imagem como, e a salve em seu computador.</p>
                     <p align="justify">4 - Vá nas configurações do seu e-mail e no campo de assinaturas insira a imagem baixada.</p><br>
 
-                    <table width="540px" height="190px">
+                    <table width="540px" height="185px">
                         <tbody>
                             <tr>
                                 <td id="about" class="img-fluid" style="background-image:url('imgs/sede4.png');">
@@ -109,7 +109,7 @@
                                                     <span class="ng-binding">{{telefone2}}</span>
                                                 </div>
 
-                                                <strong style="position:absolute;top:28.5%;" class="ng-binding">{{email}}@ints.org.br</strong><br>
+                                                <strong style="position:absolute;top:28.5%; font-size:12.5px;" class="ng-binding">{{email}}@ints.org.br</strong><br>
                                                 <strong style="margin-bottom: 10px;position:absolute;top:57%;" class="ng-binding">{{filial}}</strong>
                                             </div>
                                         </div>
