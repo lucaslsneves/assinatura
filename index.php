@@ -14,6 +14,7 @@
     <script type="text/javascript" src="alertify.js"></script>
     <link rel="stylesheet" href="css/alertify.css">
     <link rel="stylesheet" href="css/themes/default.css">
+    <link rel="icon" href="imgs/favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -36,7 +37,7 @@
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
                             </div>
-                            <input id="cargo" type="text" ng-model="cargo" class="form-control" maxlength="55" required placeholder="* Cargo" aria-label="calgo" aria-describedby="basic-addon1">
+                            <input id="cargo" type="text" ng-model="cargo" class="form-control" maxlength="55" required placeholder="* Cargo" aria-label="cargo" aria-describedby="basic-addon1">
                         </div>
 
                         <div class="input-group mb-3">
@@ -61,6 +62,7 @@
                             <select onchange="backgroundImg()" ng-model="filial" class="custom-select" required id="inputGroupSelect01">
                                 <option value="" disabled selected>Selecione sua unidade</option>
                                 <option value="Sede - Salvador/BA">Sede Salvador/BA</option>
+                                <option value="Escritório de São Paulo">Escritório de São Paulo</option>
                                 <option value="Upa Feira de Santana">Upa Feira de Santana</option>
                                 <option value="UPA 24h Brotas"> UPA 24h Brotas</option>
                                 <option value="Bertioga">Bertioga</option>
@@ -96,7 +98,7 @@
                     <table width="540px" height="185px">
                         <tbody>
                             <tr>
-                                <td id="about" class="img-fluid" style="background-image:url('imgs/sede4.png');">
+                                <td id="about" class="img-fluid" style="background-image:url('imgs/sede5.png');">
                                     <div id="dados">
                                         <div id="signature-container">
                                             <div id="wrapper-nome-cargo">
@@ -107,7 +109,7 @@
                                                 <div style="display:flex; position:absolute;top:1%; width:100%;">
                                                     <span style="margin-right: 10px;" id="telCard1" class="ng-binding">{{telefone}}</span>
                                                     <span class="ng-binding">{{telefone2}}</span>
-                                                </div>
+                                                </div>   
 
                                                 <strong style="position:absolute;top:28.5%; font-size:12.5px;" class="ng-binding">{{email}}@ints.org.br</strong><br>
                                                 <strong style="margin-bottom: 10px;position:absolute;top:57%;" class="ng-binding">{{filial}}</strong>
@@ -144,7 +146,6 @@
 
     $('#telefone2').change(function() {
         var x = $('#telefone2').val();
-        console.log(x)
         document.getElementById("divisor").style.visibility = "visible";
 
         if (!$('#telefone2').val())
@@ -154,12 +155,12 @@
 
     function backgroundImg() {
         var backgroundStatus = $('select option').filter(':selected').val()
-        console.log(backgroundStatus);
+       
 
-        if (backgroundStatus == "Região SACA") {
+        if (backgroundStatus == "Região SACA" || backgroundStatus == "Escritório de São Paulo") {
             document.getElementById("about").style = "background-image:url('imgs/saca4.png')"
         } else if (backgroundStatus == "Hospital HUGO") {
-            document.getElementById("about").style = "background-image:url('imgs/hugo4.png')"
+            document.getElementById("about").style = "background-image:url('imgs/hugo4.jpeg')"
         } else if (backgroundStatus == "Hospital Municipal de Guarapiranga") {
             document.getElementById("about").style = "background-image:url('imgs/guarapiranga4.png')"
         } else if (backgroundStatus == "Upa Feira de Santana") {
@@ -173,7 +174,7 @@
         } else if (backgroundStatus == "Hospital Manoel Victorino") {
             document.getElementById("about").style = "background-image:url('imgs/mv4.png')"
         } else {
-            document.getElementById("about").style = "background-image:url('imgs/sede4.png')"
+            document.getElementById("about").style = "background-image:url('imgs/sede5.png')"
         }
 
     }
